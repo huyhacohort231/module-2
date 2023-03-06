@@ -14,16 +14,6 @@ const lagList = document.getElementById('lag-list');
 const uiLead = new UI(leadList);
 const uiLag = new UI(lagList);
 const uiWig =new UI(wigTitle);
-const weather = new Weather();
-getWeather();
-function getWeather(){
-  weather.getWeather()
-    .then(results => {
-      console.log(results);
-    })
-    .catch(err => console.log(err));
-}
-
 
 loadEventListeners();
 
