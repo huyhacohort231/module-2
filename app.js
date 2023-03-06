@@ -104,3 +104,30 @@ function addLag(e) {
 function removeLag(e) {
   uiLag.removeItem(e);
 }
+
+const showJoke = document.getElementById('show-joke');
+const testJoke = document.getElementById('test-joke');
+const url = `https://v2.jokeapi.dev/joke/Programming?type=single`;
+const showQuote = document.getElementById('show-quote');
+const showAuthor = document.getElementById('show-author');
+const testQuote = document.getElementById('test-quote');
+const url2 = `http://api.quotable.io/random`;
+
+let addJoke = () => {
+    fetch(url)
+    .then(data => data.json())
+    .then(item => showJoke.textContent = `${item.joke}`)
+}
+
+let addQuote = () => {
+    fetch(url2)
+    .then(data => data.json())
+    .then(item => {
+      showQuote.textContent = `${item.content}` 
+      showAuthor.textContent = `${item.author}`
+    })
+}
+testJoke.addEventListener('click', addJoke);
+addJoke();
+testQuote.addEventListener('click', addQuote);
+addQuote();
