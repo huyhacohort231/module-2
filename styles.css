@@ -1,0 +1,14 @@
+canvas {
+    border: 1px dotted red;
+  }
+  
+  .chart-container {
+    position: relative;
+    margin: auto;
+    height: 30vh;
+    width: 60vw;
+    background: #1D1F20;
+  }
+.logo {
+    height: 50px;
+}

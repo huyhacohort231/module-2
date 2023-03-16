@@ -14,8 +14,9 @@
     <div class="container">
       <div class="row">
           <div class="col s12">
-            <h1>The 4 Disciplines of Execution Helper</h1>
+            <h1><img src="./img/bellA.png" alt="" class="logo">The 4 Disciplines of Execution Helper</h1>
               <div id="main" class="card">
+                  <!-- wig -->
                   <div class="card-content">
                       <span class="card-title" id="wig-title">Your W.I.G:</span>
                       <p>Do the minimum to maintain the urgent and less important tasks and use your remaining energy to execute ONE Wildly Important Goal</p>
@@ -29,8 +30,9 @@
                         </form>
                       </div>
                   </div>
+                  <!-- Lag results -->
                   <div class="card-action">
-                    <span class="card-title">Your Lag Results</span>
+                    <span class="card-title"><img src="./img/bellB.png" alt="" class="logo">Your Lag Results</span>
                     <p>Breakdown your W.I.G to small support goals you want to see overtime</p>
                     <div class="row">
                       <form id="lag-form">
@@ -42,7 +44,11 @@
                       </form>
                       <ul class="collection mt-3" id="lag-list"></ul>
                     </div>
-                  </div> 
+                  </div>
+                  <div class="chart-container p-4">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                  <!-- Lead behaviors  -->
                   <div class="card-action" id="lead-card">
                     <span class="card-title">Your Lead Behaviors</span>
                     <p>Define your lead behaviors to achieve your lag results</p>
@@ -55,6 +61,9 @@
                         <input type="submit" value="Add Lead Behavior" class="btn blue text-white">
                       </form>
                       <ul class="collection mt-3" id="lead-list"></ul>
+                    </div>
+                    <div class="chart-container p-4">
+                      <canvas id="myChart2"></canvas>
                     </div>
                   </div>
                   <div class="card-action">
@@ -85,6 +94,8 @@
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="storage.js"></script>
     <script src="UI.js"></script>
